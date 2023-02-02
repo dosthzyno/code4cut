@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100일</title>
+    <style>
+      @font-face {
+        font-family: "LeeSeoyun";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      /* body태그 자체에 css 요소 부여 */
+        body {
+            font-family: "LeeSeoyun";
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-size: cover;
+            background-image: url("./background_1.jpeg");
+        }
+        .container {
+            width: 390px;
+            /* background-color: #ff9d73; */
+            background-color: lightpink;
+            height: 100%;
+        }
+        .headers {
+            display: flex;
+            /* flex-direction: column; */
+            justify-content:center; 
+            align-items: center;
+        }
+        .main_title {
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .photos {
+            margin-top: 30px;
+        }
+        .photo-frame {
+            background-color: white;
+            margin: 15px 20px;
+            height: 200px;
+            background-size: cover;
+            position: relative;
+        }
+        .footers {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .f-title {
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .f-date {
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        #image1 {
+            background-image: url('./100_1.jpeg');
+        }
+        #image2 {
+            background-image: url('./100_2.jpeg');
+        }
+        #image3 {
+            background-image: url('./100_3.jpeg');
+        }
+        #image4 {
+            background-image: url('./100_4.jpeg');
+            background-size: 320px;
+        }
+        #image5 {
+            background-image: url('./100_5.jpeg');
+        }
+        .photo_description {
+            color: white;
+            background-color: black;
+
+            width: fit-content;
+            padding: 0 20px;
+            margin-bottom: 10px;
+
+            border-radius: 10px;
+            position: absolute;
+            bottom: 0;
+
+            transform: translate(-50%);
+            left: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="'headers">
+            <h2 class="main_title">100일까지의 우리</h2>
+        </div>
+        <div class="photos">
+            <div id="image1" class="photo-frame">
+                <span id="desc1" class="photo_description">
+                    첫 한남동 카페 데이트
+                </span>
+            </div>
+            <div id="image2" class="photo-frame">
+                <span id="desc2" class="photo_description">
+                    첫 벚꽃 구경 in 잠실
+                </span>
+            </div>
+            <div id="image3" class="photo-frame">
+                <span id="desc3" class="photo_description">
+                    첫 애버랜드 with 워니
+                </span>
+            </div>
+            <div id="image4" class="photo-frame">
+                <span id="desc4" class="photo_description">
+                    험난했던 100일 ㅠㅠ
+                </span>
+            </div>
+            <div id="image5" class="photo-frame">
+                <span id="desc5" class="photo_description">
+                    하지만 행복했당❤️
+                </span>
+            </div>
+        </div>
+        <div class="footers">
+            <p class="f-title">Happy 1st anniversary</p>
+            <p class="f-date">2023.02.03</p>
+        </div>
+    </div>
+</body>
+</html>
